@@ -15,10 +15,19 @@ return {
   },
   opts = {
     filesystem = {
+      always_show = true,
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
         },
+      },
+      follow_current_file = {
+        enabled = true,
       },
     },
   },
